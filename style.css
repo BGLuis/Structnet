@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    /* font-family: sans-serif; */
+    text-decoration: none;
+}
+
+a{
+    color:unset
+}
+
+
+body{
+    background-color: #FFFEF4;
+    font-family: 'League Spartan';
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #1B1B31;
+}
+
+
+#barra{
+    background-color:#2F3390;
+    color: white;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    padding: 0 10px;
+    transition: .3s;
+    z-index: 10;
+}
+
+#menu{
+    height: 80px;
+    padding: 0 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11;
+    color: white;
+}
+
+#menu nav:first-child a{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+#menu nav:first-child a img{
+    height: 50px;
+    margin-right: 4%;
+}
+
+#menu nav:last-child{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu nav:last-child a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    transition: .3s;
+}
+
+
+#menu nav:last-child a:hover{
+    background-color: #FBC611;;
+    color: #2F3390;
+}
+
+#notficacao{
+    height: 50px;
+    width: 110%;
+    background-color: white;
+    color: #215FBC;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    top: -50px;
+    right: 5%;
+    z-index: -1;
+    opacity: 0;
+}
+
+#barra.estender #notficacao{
+    top: 0px;
+    z-index: 10;
+    opacity: 1;
+}
+
+#roxo{
+    background-color:#2F3390;
+    color: white;
+    padding-top: 130px;
+    position: relative;
+}
+
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+    height: 80vh;
+}
+
+.info .texto{
+    width: 40%;
+}
+
+.info .texto h1{
+    color: #2BA8E0;
+    font-size: 64px;
+}
+.info .texto h1 a{
+    color: #FBC611;
+}
+
+.info .texto p{
+    font-size: 24px;
+    line-height: 140%;
+    margin: 10% 0;
+}
+
+.info .texto .btn{
+    border: 4px solid #FBC611;
+    background-color: #FBC611;
+    border-radius: 10px;
+    color:#2F3390;
+    padding: 30px 0;
+    width: 60%;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+    text-align: center;
+
+}
+.info .texto .btn:hover{
+    color: #FBC611;
+    background-color:#2F3390;
+}
+
+.info .img{
+    margin: auto 0;
+
+}
+.info .img img{
+    width: 100%;
+}
+#servidores{
+
+}
+#servidores .texto h1{
+    color: white;
+    width: 250%;
+    padding-bottom: 5px;
+    border-bottom: 4px solid white;
+    margin-bottom: 20px;
+}
+
+#servidores .texto a{
+    margin-left: 50px;
+    border-left: 4px solid white;
+    font-size: 32px;
+    padding: 10px 0;
+    padding-left: 5px;
+}
+
+#triangulo{
+    background-color: #2F3390;
+    width: 300%;
+    height: 20%;
+    transform: rotate(-6deg);
+    top: 80%;
+    left: -10%;
+    position: absolute;
+    z-index: -10;
+}
+
+#servico{
+    padding-top: 300px;
+}
+
+#servico .titulo{
+    font-size: 36px;
+    margin: 0 10% ;
+}
+
+#quadrados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.quadrado{
+    border: 4px solid #2F3390; 
+    width: 40%;
+    height: 30vh;
+    margin: 1%;
+    border-radius: 20px;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quadrado h1{
+    font-size: 30px;
+    text-align: center;
+    color: #2F3390;
+}
+
+.quadrado a{
+    color: #2F3390;
+    border: 4px solid #FBC611;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding: 10px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.quadrado a:hover{
+    color: #FBC611;
+    background-color: #2F3390;
+    border: 4px solid #2F3390;
+}
+
+#pratico{
+    position: relative;
+    background-color: #2F3390;
+    height: 70vh;
+    margin-top: 7%;
+    padding: 0 5%;
+    padding-top: 2%;
+}
+
+#pracima{
+    background-color: #2F3390;   
+    width: 300%;
+    height: 40%;
+    transform: rotate(-6deg);
+    top: -50%;
+    left: -10%;
+    position: absolute;
+    z-index: -10;
+}
+#pratico .titulo{
+    font-size: 32px;
+    color: white;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 4px solid white;
+    margin-bottom: 20px;
+    margin-bottom: 3%;
+}
+#tela{
+    position: relative;
+    margin: 0 auto;
+    background-color: rosybrown;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slider{
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 90%;
+    height: 100%;
+}
+
+.Seta{
+    position: absolute;
+    background-color: #FBC611;
+    color: #2F3390;
+    width: 5%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    z-index: 2;
+}
+
+#direita{
+    left: 0;
+}
+
+#esqueda{
+    right: 0;
+}
+
+.itens{
+    flex: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F3390;
+    transition: linear 1s;
+}
+
+.itens:first-child{
+    margin-left: -100%;
+}
+
+.itens img{
+    height: 100%;
+}
